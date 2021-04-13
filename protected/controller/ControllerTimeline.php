@@ -1,5 +1,5 @@
 <?php
-class ControllerHome extends Controller {
+class ControllerTimeline extends Controller {
     function __construct($view, $conf, $var, $acc) {
         parent::__construct($view, $conf, $var, $acc);
     }
@@ -7,7 +7,7 @@ class ControllerHome extends Controller {
     	    foreach ($this->var as $key => $value) {
             $this->data[$key] = $value;
         }
-        $this->view->show("home.twig", $this->data, $this->accion);
+        $this->view->show("timeline.twig", $this->data, $this->accion);
     }
 }
 ?>

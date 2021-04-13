@@ -61,7 +61,7 @@ class CREARWEB {
             $controllerName = "Controller". ucfirst($accion);
        }
 // -- >Lo mismo sucede con las acciones, si no hay accion, tomamos index como accion
-      $actionName = "main";
+      $actionName = "main"; 
 // --> Carga la direccion de las vistas
       $vistaPath = $this->getFolderVista($this->configure);
 // --> Carga la direccion del modelo
